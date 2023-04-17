@@ -1,0 +1,225 @@
+/*root font-size*/
+html{
+    font-size: 25px;
+}
+
+
+/*Nav*/
+
+nav, footer{
+    height: 75px;
+    width: 100vw;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+nav a{
+    padding:3px;
+
+    border:2px solid white;
+    border-radius: 10px;
+
+    background-color: gray;
+    font-weight: bold;
+}
+
+a:link{
+    color:white;
+    text-decoration: none;
+}
+a:visited{
+    color:white;
+    text-decoration: none;
+}
+ 
+
+
+/*Header*/
+
+Header{
+    height: 500px;
+    width: 100vw;
+
+    background-image: url(https://img.freepik.com/premium-photo/clean-modern-image-headphones-music-notes-arranged-geometric-pattern-set-against-pastel-abstract-background-generated-by-ai_855332-133.jpg?w=900);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+
+    
+}
+
+
+#fotoProfilo{
+    position: absolute;
+    top:525px;
+    left: calc(50% - 50px);
+
+    background-image: url(../mhw1/Immagini/profilo.jpg); 
+    background-size: contain;
+    background-size: cover;
+
+    width: 100px;
+    height: 100px;
+
+    border: 2px solid white;
+    border-radius: 100px;
+
+}
+
+
+#fotoProfilo div{
+    position: absolute;
+    width: 250px;
+    top: 100px;
+    left: calc(50% - 125px);
+
+    text-align: center;
+    font-size: .80rem;
+    color: black;
+}
+
+
+#fotoProfilo div p{
+font-style: italic;
+margin:0px;
+}
+
+#fotoProfilo div div{
+    border: 1px solid rgb(240, 240, 240);
+    margin-top: -45px;
+}
+
+
+#overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, .3);
+   
+    width: 100vw;
+    height: 500px;
+}
+
+#overlay div{
+    position:absolute;
+    max-width: 780px;
+    left: calc(50% - 106px);
+    top: calc(50% - 1px);
+
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+}
+    
+
+
+/*Body*/
+
+body{
+
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+margin:0px;
+width: 100vw;
+
+font-size: .72rem;
+font-style: normal;
+font-family: 'Roboto',sans-serif;
+color:black;
+line-height: normal;
+
+}
+
+
+#spazioTraFotoProfiloESezione{
+    height: 160px; 
+    /* Lo spazio tra la sottolineatura dopo "Ultimo aggiorn.."
+    e l'inizio della sezione doveva essere di 60 pixel. 
+    Per realizzarlo ho sommato metà altezza della foto profilo
+    con l'altezza del div (nome, aggiornamento) e lo spazio tra la sottolineatura
+    ed il div (nome,aggiornament). Tale quantità risulta essere pari a 100px,
+    a questi ho sommato i 60px richiesti dalla consegna.
+    */
+}
+
+
+.contenitoreSezioneEnumeri{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:flex-start;
+}
+
+.numeri{
+    margin-right: 40px;
+    color:gray;
+    padding-top: 3px;
+}
+
+
+section{
+    display:flex;
+    flex-direction: column;
+    width: 66.67vw;
+}
+
+section div{
+    margin-bottom: 20px;
+}
+
+.nome{
+    font-size: 1rem;
+    padding:0px;
+}
+
+.voto{
+    color:aqua;
+    margin-top: -20px;
+}
+
+
+.voto, .giudizio{
+    font-size: .60rem;
+}
+
+.nome, .voto, .giudizio{
+    font-weight: bold;
+}
+
+.numeri, .nome, .voto, .giudizio{
+    text-align: left;
+}
+
+img{
+    margin-bottom: 120px;
+}
+
+
+
+/*Footer*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: black;
+}
+
+footer div{
+    color:white;
+}
+
+@media (max-width: 500px) {
+    body {
+    margin: 1px;
+    }
+}
+    
+    
